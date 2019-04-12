@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Ratings Reviewed</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+    <link rel="shortcut icon" href="./Images/logo_tab.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="menu">
+      <div class="close-ic" id="close-ic">
+        <i class="fa fa-close" onclick="myFunction()"></i>
+      </div>
+      <div class="menu-bar" id="menu-bar">
+        <i class="fa fa-bars" onclick="myFunction()"></i>
+      </div>
+      <ul id="menu-content">
+        <li><a href="" class="about">About us</a></li>
+        <li><a href="./login.html" class="login-bt">Login</a></li>
+      </ul>
+    </div>
+    <div><figure class="our-logo"></figure></div>
+    <h1>Ratings Reviewed</h1>
+    <form action="rating.html" method="GET">
+      <span>Copy & Paste a Product URL</span>
+      <div class="textbox-div">
+        <input
+          type="text"
+          name="search_bar"
+          id="search_bar"
+          placeholder="https://amazon.in/..."
+        />
+      </div>
+      <div class="submit-div">
+        <input type="submit" value="Proceed" />
+      </div>
+    </form>
+  </body>
+</html>

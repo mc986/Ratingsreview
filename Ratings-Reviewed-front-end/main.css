@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+/*Green shade #2FD3B3     */
+/*yellow star #FFC628     */
+/*Light blue  #2A8ED5     */
+/*Black shade #41444C     */
+/*white       #ffffff     */
+/*gray shade  #F3F3F3     */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    background-color: #f3f3f3;
+    background-image: url(./Images/home_bg.png);
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.close-ic{
+    position: absolute;
+    right: 0px;
+    display: none;
+}
+
+.menu-bar{
+    position: absolute;
+    right: 0px;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    color: #038CE3;
+    font-size: 26px;
+    text-align: right;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+ul{
+    margin-top: 36px;
+    display: none;
+    width: 112px;
+    height: 88px;
+    background-color: #DFDFDF;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 14px;
+    padding-left: 10px;
+    padding-top: 10px;
+    text-align: left;
+}
+
+li{
+    display: table-row;
+}
+
+a{
+    text-decoration: none;
+    color: #000000;
+}
+
+.our-logo{
+    background-image: url(./Images/logo@2x.png);
+    width: 78px;
+    height: 86px;
+    margin: 0 auto;
+    margin-top: 150px;
+}
+
+h1{
+    margin-top: 0px;
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 38px;
+    color: #000000;
+}
+
+form{
+    margin-top: 68px;
+    text-align: left;
+}
+
+form span{
+    margin-left: 5%;
+    font-size: 16px;
+    font-weight: 600;
+    color: #41444C;
+}
+
+.textbox-div{
+    text-align: center;
+}
+
+input[type=text]{
+    margin-top: 16px;
+    border: none;
+    height: 48px;
+    width: 90%;
+    max-width: 1024px;
+    border-radius: 20px;
+    padding-left: 44px;
+    color: #484848;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+}
+
+.submit-div{
+    text-align: center;
+}
+
+input[type=submit]{
+    cursor: pointer;
+    border: none;
+    height: 40px;
+    width: 132px;
+    background-color: #038CE3;
+    border-radius: 12px;
+    color: #ffffff;
+    margin-top: 32px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+@media only screen and (min-width: 480px) and (max-width: 1024px) {
+    body{
+        background-image: url(./Images/home_bg@2x.png);
+    }
+
+    .our-logo{
+        background-image: url(./Images/logo@Nx.png);
+        width: 102px;
+        height: 114px;
+        margin-top: 160px;
+    }
+
+    h1{
+        margin-top: 16px;
+    }
+
+    form{
+        margin-top: 100px;
+    }
+
+    form span{
+        font-weight: bold;
+    }
+
+    input[type=submit]{
+        height: 48px;
+        width: 156px;
+        border-radius: 24px;
+        margin-top: 44px;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    
+}
+
+@media only screen and (min-width: 1024px) {
+    body{
+        background-image: url(./Images/home_bg@2x.png);
+    }
+
+    .menu-bar{
+        display: none;
+    }
+
+    .menu{
+        position: unset;
+        margin-right: 72px;
+    }
+
+    ul{
+        display: unset;
+        margin: 0;
+        width: 100%;
+        text-align: right;
+        background-color: #F3F3F3;
+        padding: 0;
+    }
+
+    li{
+        display: inline-table;
+    }
+
+    a{
+        margin-left: 25px;
+        display: block;
+        width: 104px;
+        height: 32px;
+        border-radius: 17px;
+        text-align: center;
+    }
+
+    .login-bt{
+        background-color: #038CE3;
+        color: white;
+    }
+
+    .our-logo{
+        background-image: url(./Images/logo@Nx.png);
+        width: 102px;
+        height: 114px;
+        margin-top: 80px;
+    }
+
+    h1{
+        margin-top: 16px;
+    }
+
+    form{
+        margin-top: 28px;
+    }
+
+    form span{
+        margin-left: 18%;
+        font-weight: bold;
+    }
+
+    input[type=text]{
+        width: 64%;
+        box-shadow: 0 3px rgb(0, 0, 0,16%);
+    }
+
+    .submit-div{
+        text-align: right;
+        margin: 0 18% 0 auto;
+    }
+}

@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+/*Green shade #2FD3B3     */
+/*yellow star #FFC628     */
+/*Light blue  #2A8ED5     */
+/*Black shade #41444C     */
+/*white       #ffffff     */
+/*gray shade  #F3F3F3     */
+/*othe shade  #F5F5F5    */
+/*blue shade  #038CE3     */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    background-color: #F3F3F3;
+    text-align: justify;
+}
+
+header{
+    background-color: #038CE3;
+    padding: 16px 6% 20px 5%;
+}
+
+.our-logo{
+    background-image: url(./Images/logo@2x.png);
+    width: 60px;
+    height: 60px;
+    background-size: cover;
+    background-position: center;
+    float: left;
+}
+
+header h3{
+    margin-left: 80px;
+    height: 60px;
+    font-size: 28px;
+    font-weight: 700;
+    color: #F5F5F5;
+    line-height: 50px;
+    vertical-align: middle;
+    margin-bottom: 16px;
+}
+
+form{
+    text-align: left;
+}
+
+input[type=text]{
+    border: none;
+    height: 36px;
+    width: 56%;
+    min-width: 220px;
+    border-radius: 20px;
+    padding-left: 32px;
+    color: #484848;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 17px;
+}
+
+input[type=submit]{
+    margin-left: 8px;
+    border: none;
+    height: 28px;
+    width: 96px;
+    background-color: #41444C;
+    border-radius: 12px;
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/*................main content...................*/
+main{
+    padding-top: 16px;
+    padding-left: 5%;
+    padding-right: 6%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.product-name{
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 38px;
+    color: #41444C;
+}
+
+.pimg{
+    margin-top: 16px;
+    text-align: center;
+}
+
+.product-img{
+    margin: 0 auto;
+    display: block;
+    width: 240px;
+    height: 240px;
+    border: 2px solid #ddd;
+}
+
+.pimg a{
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 18px;
+    color: #2A8ED5;
+    vertical-align: middle;
+}
+
+.rating-detail{
+    display: grid;
+    grid-template-columns: 148px auto 148px;
+    margin-top: 44px;
+}
+
+.original-ratings{
+    text-align: center;
+}
+
+.ic-arrow{
+    justify-self: center;
+    align-self: center;
+    font-size: 36px;
+    color: #E2E2E2;
+    line-height: 1px;
+}
+
+.adjusted-ratings{
+    text-align: center;
+}
+
+.company-logo{
+    width: 28px;
+    height: 28px;
+    background-image: url(./Images/al.png);
+    background-size: cover;
+    background-position: center;
+    float: left;
+}
+
+.adjusted-ratings .company-logo{
+    width: 28px;
+    height: 31px;
+    background-image: url(./Images/logo.png);
+}
+
+.rating-heading{
+    margin-left: auto;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 28px;
+    vertical-align: middle;
+    color: #000000;
+}
+
+.number-rating{
+    font-size: 64px;
+    font-weight: bold;
+    color: #038CE3;
+    line-height: 56px;
+    vertical-align: middle;
+}
+
+.out-of{
+    font-size: 24px;
+    font-weight: 600;
+    color: #373737;
+}
+
+.star-rating span{
+    color: #FFC628;
+    font-size: 16px;
+    vertical-align: middle;
+}
+
+.number-review{
+    font-size: 16px;
+    font-weight: 600;
+    color: #2A8ED5;
+}
+
+@media only screen and (min-width: 480px) and (max-width: 1024px) {
+    header{
+        padding: 16px 5% 32px 5%;
+    }
+
+    .our-logo{
+        width: 64px;
+        height: 64px;
+    }
+
+    header h3{
+        margin-left: 80px;
+        line-height: 64px;
+        margin-bottom: 28px;
+        line-height: 54px;
+    }
+
+    input[type=text]{
+        height: 48px;
+        width: 68%;
+        padding-left: 32px;
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    input[type=submit]{
+        margin-left: 12px;
+        height: 48px;
+        width: 156px;
+        border-radius: 24px;
+        font-size: 20px;
+    }
+
+    /*................main content...................*/
+    main{
+        padding-top: 16px;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .product-img{
+        width: 400px;
+        height: 400px;
+    }
+
+    .pimg a{
+        font-size: 20px;
+    }
+
+    .rating-detail{
+        grid-template-columns: auto 50px auto;
+    }
+
+    .original-ratings{
+        justify-self: center;
+    }
+
+    .adjusted-ratings{
+        justify-self: center;
+    }
+
+    .company-logo{
+        width: 32px;
+        height: 32px;
+        margin-right: 8px;
+    }
+
+    .rating-heading{
+        font-size: 18px;
+        line-height: 32px;
+    }
+
+    .number-rating{
+        font-size: 72px;
+        line-height: 64px;
+    }
+
+    .out-of{
+        font-size: 28px;
+    }
+
+    .star-rating span{
+        font-size: 20px;
+    }
+
+    .number-review{
+        font-size: 18px;
+        font-weight: 600;
+        color: #2A8ED5;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    header{
+        padding: 16px 5% 27px 5%;
+    }
+
+    header h3{
+        margin-left: 20px;
+        margin-bottom: 0;
+        float: left;
+    }
+
+    form{
+        text-align: right;
+        margin-top: 11px;
+    }
+
+    input[type=text]{
+        height: 38px;
+        width: 56%;
+        min-width: 220px;
+    }
+
+    input[type=submit]{
+        margin-left: 16px;
+    }
+
+    /*................main content...................*/
+    main{
+        padding-top: 36px;
+        padding-left: 12%;
+        padding-right: 12%;
+    }
+
+    .ratings{
+        display: grid;
+        grid-template-columns: 30% auto;
+        margin-top: 36px;
+    }
+
+    .pimg{
+        margin-top: 0;
+        justify-self: center;
+        align-self: center;
+    }
+
+    .product-img{
+        margin: 0;
+        width: 240px;
+        height: 240px;
+    }
+
+    .rating-detail{
+        margin-top: 0;
+        grid-template-columns: auto 50px auto;
+        align-self: center;
+    }
+
+    .original-ratings{
+        justify-self: center;
+    }
+
+    .adjusted-ratings{
+        justify-self: center;
+    }
+
+    .company-logo{
+        width: 32px;
+        height: 32px;
+        margin-right: 8px;
+    }
+
+    .rating-heading{
+        font-size: 18px;
+        line-height: 32px;
+    }
+
+    .number-rating{
+        font-size: 72px;
+        line-height: 64px;
+    }
+
+    .out-of{
+        font-size: 28px;
+    }
+
+    .star-rating span{
+        font-size: 20px;
+    }
+
+    .number-review{
+        font-size: 18px;
+        font-weight: 600;
+        color: #2A8ED5;
+    }
+}
